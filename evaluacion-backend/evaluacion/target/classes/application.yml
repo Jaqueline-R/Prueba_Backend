@@ -1,0 +1,19 @@
+spring:
+  main:
+    lazy-initialization: true
+  datasource:
+    url: jdbc:postgresql://159.223.219.224:5432/bytesws_evaluacion
+    username: admin
+    password: Admin1234*
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: update
